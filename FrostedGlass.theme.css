@@ -6,45 +6,30 @@
 /* Old Windows titlebar */
 /* @import url('https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css'); */
 :root {
-	--background-image: rgba(
-		0,
-		0,
-		0,
-		0.1
-	);
-	--background-image-blur: 50px; 
-	--background-image-size: cover; 
-	--background-image-position: center; 
-	--popout-modal-image: rgba(
-		0,
-		0,
-		0,
-		0.9
-	);
-	--popout-modal-blur: 5px; 
-	--popout-modal-size: cover; 
-	--popout-modal-position: center; 
-	--home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg'); 
+	--background-image: rgba(0, 0, 0, 0.1);
+	--background-image-blur: 50px;
+	--background-image-size: cover;
+	--background-image-position: center;
+	--popout-modal-image: rgba(0, 0, 0, 0.9);
+	--popout-modal-blur: 5px;
+	--popout-modal-size: cover;
+	--popout-modal-position: center;
+	--home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
 	--home-button-size: cover;
-	--home-button-position: center; 
-	--serverlist-brightness: 0.1; 
-	--left-brightness: 0.1; 
-	--middle-brightness: 0.1; 
-	--right-brightness: 0; 
-	--popout-modal-brightness: 0.75; 
+	--home-button-position: center;
+	--serverlist-brightness: 0.1;
+	--left-brightness: 0.1;
+	--middle-brightness: 0.1;
+	--right-brightness: 0;
+	--popout-modal-brightness: 0.75;
 	--gradient-primary: 103, 58, 183;
 	--gradient-secondary: 3, 21, 181;
-	--gradient-direction: 320deg; 
+	--gradient-direction: 320deg;
 	--tint-colour: 255, 101, 159;
-	--tint-brightness: 0; 
-	--window-padding: 20px; 
-	--window-roundness: 10px; 
-	--scrollbar-colour: rgba(
-		255,
-		255,
-		255,
-		0.05
-	); 
+	--tint-brightness: 0;
+	--window-padding: 20px;
+	--window-roundness: 10px;
+	--scrollbar-colour: rgba(255, 255, 255, 0.05);
 	--link-colour: #00b0f4;
 	--font: 'Noto Sans';
 
@@ -53,88 +38,88 @@
 .platform-win .typeWindows-2-g3UY {
 	height: var(--TB-bar-height, 20px);
 }
-.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeMin-3Yqxk5.grow-2T4nbg{
-    	background-color: transparent;
+.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeMin-3Yqxk5.grow-2T4nbg {
+	background-color: transparent;
 	height: 30px;
 }
 
 svg.artwork-L5TAwQ {
-    display: none !important;
-    visibility: hidden !important;
+	display: none !important;
+	visibility: hidden !important;
 }
-.assetsLargeImageSpotify-17ME3M{
-    border-radius:6px;
+.assetsLargeImageSpotify-17ME3M {
+	border-radius: 6px;
 }
 .vc-notification-root {
-  background-color: rgba(36, 128, 70, 0.4) !important;
+	background-color: rgba(36, 128, 70, 0.4) !important;
 }
 .vc-notification-close-btn {
-  color: white !important;
+	color: white !important;
 }
 .container-3Csys8 {
-    display: none !important;
+	display: none !important;
 }
 .shiki-root {
-    background: var(--background-secondary) !important;
+	background: var(--background-secondary) !important;
 }
 .session-9khLqt {
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    padding: 12px 16px;
-    padding-left: 12px;
-    border-bottom: none;
-    margin-top: 16px;
-    gap: 12px;
+	background-color: var(--background-secondary);
+	border-radius: 8px;
+	padding: 12px 16px;
+	padding-left: 12px;
+	border-bottom: none;
+	margin-top: 16px;
+	gap: 12px;
 }
 .sessionIcon-2fwSzb {
-    color: var(--interactive-normal);
-    background: transparent;
+	color: var(--interactive-normal);
+	background: transparent;
 }
 .withFrame-2dL45i {
-   height: 20px;
+	height: 20px;
 }
 .typeWindows-2-g3UY .winButton-3UMjdg > svg {
-    display: none;
+	display: none;
 }
 .typeWindows-2-g3UY .winButton-3UMjdg {
-    top: 0;
-    width: 12px;
-    height: 12px;
-    margin: 2px 12px 0px 0px;
-    border-radius: 12px;
+	top: 0;
+	width: 12px;
+	height: 12px;
+	margin: 2px 12px 0px 0px;
+	border-radius: 12px;
 }
 .typeWindows-2-g3UY .winButton-3UMjdg::after {
-    content: '';
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
+	content: '';
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
 }
 .typeWindows-2-g3UY .winButtonClose-3Q8ZH5::after {
-    background-color: hsl(0, 50%, 50%) !important;
+	background-color: hsl(0, 50%, 50%) !important;
 }
 .typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(3)::after {
-    background-color: hsl(120, 50%, 50%) !important;
+	background-color: hsl(120, 50%, 50%) !important;
 }
 .typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(4)::after {
-    background-color: hsl(50, 50%, 50%) !important;
+	background-color: hsl(50, 50%, 50%) !important;
 }
 .typeWindows-2-g3UY > div:hover::after {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 .typeWindows-2-g3UY > div:active::after {
-    transform: scale(1);
+	transform: scale(1);
 }
 .wordmarkWindows-2dq6rw svg {
-   display:none;
+	display: none;
 }
-.wordmarkWindows-2dq6rw::before{
-   content: 'Vencord';
-   font-size: 13px;
-   font-weight: 700;
-   top:2px;
-   left: 0px;
-   position: relative;
+.wordmarkWindows-2dq6rw::before {
+	content: 'Vencord';
+	font-size: 13px;
+	font-weight: 700;
+	top: 2px;
+	left: 0px;
+	position: relative;
 }
-.barFill-3RgCsY{
-    background: var(--spotify);
+.barFill-3RgCsY {
+	background: var(--spotify);
 }
