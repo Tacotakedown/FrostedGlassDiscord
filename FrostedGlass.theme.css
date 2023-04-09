@@ -123,3 +123,165 @@ svg.artwork-L5TAwQ {
 .barFill-3RgCsY {
 	background: var(--spotify);
 }
+#vc-spotify-player {
+	--spotify-wave-width: 240px;
+	--spotify-vencord-color: #1a1b26;
+	--spotify-vencord-text: var(--text-muted);
+}
+@keyframes spotifywave {
+	0% {
+		-webkit-mask-position-x: var(--spotify-wave-width);
+	}
+
+	100% {
+		-webkit-mask-position-x: 0;
+	}
+}
+#vc-spotify-player::before {
+	content: '';
+	position: absolute;
+	height: 25px;
+	z-index: 1;
+	width: var(--spotify-wave-width);
+	margin-top: -29px;
+	left: 0;
+	background: var(--spotify-vencord-color);
+	-webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="240" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
+	animation: spotifywave 4s linear infinite;
+	animation-delay: 0s;
+	opacity: 1;
+}
+#vc-spotify-player#vc-spotify-player {
+	background: linear-gradient(
+		var(--spotify-vencord-color) 20%,
+		var(--bg-overlay-1, var(--background-secondary-alt))
+	);
+	border-bottom: none;
+}
+
+#vc-spotify-song-title#vc-spotify-song-title,
+.vc-spotify-ellipoverflow.vc-spotify-ellipoverflow,
+.vc-spotify-artist.vc-spotify-artist,
+.vc-spotify-album.vc-spotify-album
+/* , .vc-spotify-time-right, .vc-spotify-time-left */ {
+	color: var(--spotify-vencord-text);
+}
+#vc-spotify-player [class*='bar-'] {
+	background: hsl(var(--primary-700-hsl) / 0.3);
+}
+#vc-spotify-player [class*='barFill'] {
+	background: var(--spotify-vencord-color);
+}
+[class*='wrapper-']:not(:empty) + #vc-spotify-player {
+	margin-top: 27px;
+}
+[class*='panels-'] [class*='wrapper-'] [class*='container-'] {
+	border-bottom: none;
+}
+/* Better Jump To Present Button 
+Fork this to change values and stuff */
+
+[class*='jumpToPresentBar'] {
+	display: contents;
+}
+
+[class*='jumpToPresentBar'] > button:first-child {
+	display: none;
+}
+
+[class*='jumpToPresentBar'] > button:last-child {
+	position: absolute;
+	z-index: 1;
+	bottom: 24px;
+	right: 22px;
+	padding: 8px !important;
+	height: auto;
+	background-color: #5865f2;
+	box-shadow: var(--elevation-high);
+	border-radius: 100px;
+	display: flex;
+	font-size: 0px;
+	color: transparent;
+	transition: font-size 0.2s 0.1s, color 0.2s, padding 0.4s 0.1s;
+}
+
+[class*='jumpToPresentBar'] > button svg {
+	order: -1;
+	margin: 0px;
+	height: 24px;
+	width: 24px;
+	top: auto;
+	margin-right: 0px;
+	margin-left: 0px;
+	color: #ffffff;
+	transition: margin 0.6s;
+}
+
+[class*='jumpToPresentBar']:hover > button {
+	padding: 8px 18px !important;
+	font-size: 14px;
+	color: #ffffff;
+	transition: font-size 0.2s, color 0.2s 0.1s, padding 0.4s;
+}
+
+[class*='jumpToPresentBar']:hover > button svg {
+	margin-right: 2px;
+	margin-left: -6px;
+}
+/* Uwu */
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.message-2CShn3 {
+	animation: slide-up 0.6s ease;
+}
+.panels-3wFtMD {
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+}
+.wrapper-3Hk9OB {
+	order: 2;
+}
+.vc-spotify-player {
+	order: 1;
+}
+.container-YkUktl {
+	order: 3;
+}
+.panel-2ZFCRb,
+activityPanel-9icbyU {
+	order: 2;
+}
+.notice-2HEN-u {
+	border-radius: 0px;
+}
+.tile-2TcwiO {
+	border-radius: 20px;
+}
+.tile-2Dr6M1 idle-3MGs7O tile-2TcwiO {
+	border-radius: 20px;
+}
+.border-2Vy6FN {
+	border-radius: 20px;
+}
+
+.typeWindows-2-g3UY,
+withFrame-2dL45i
+	titleBar-1it3bQ
+	horizontalReverse-2QssvL
+	flex-3BkGQD
+	directionRowReverse-HZatnx
+	justifyStart-2Mwniq
+	alignStretch-Uwowzr
+	withBackgroundOverride-gzmZco {
+	margin: 0px;
+	padding-top: 5px;
+}
