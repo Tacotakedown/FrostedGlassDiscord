@@ -125,7 +125,7 @@ svg.artwork-L5TAwQ {
 }
 #vc-spotify-player {
 	--spotify-wave-width: 240px;
-	--spotify-vencord-color: #1a1b26;
+	--spotify-vencord-color: #000000;
 	--spotify-vencord-text: var(--text-muted);
 }
 @keyframes spotifywave {
